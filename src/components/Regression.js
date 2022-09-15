@@ -48,13 +48,6 @@ const Regression = () => {
   const [rSquare, setRSquare] = useState("");
   const [err, setErr] = useState("");
 
-  /* const onChange = (e) => {
-    setBegDate(e.target.value);
-    setEndDate(e.target.value);
-    setTickerOne(e.target.value);
-    setTickerTwo(e.target.value);
-  }; */
-
   function POST(data) {
     trackPromise(
       fetch("/api/regression", {
@@ -262,13 +255,7 @@ const Regression = () => {
 
                 <Grid item xs={12} align="center">
                   <div id="buttons">
-                    <Button
-                      type="submit"
-                      variant="contained"
-                      color="primary"
-                      /*                     disabled={isSubmitting}
-                       */
-                    >
+                    <Button type="submit" variant="contained" color="primary">
                       Submit
                     </Button>
                   </div>
