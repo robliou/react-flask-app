@@ -131,6 +131,8 @@ def find_the_score():
         return jsonify(rSquare=model.score(features, dependent_var))
 
 
+if __name__ == '__main__':
+    app.run()
 """
 
 answer = find_the_score(tickerOne, begDate, endDate) """
