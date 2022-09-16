@@ -133,6 +133,9 @@ def find_the_score():
 
 if __name__ == '__main__':
     app.run()
+
+""" def serve():
+    return send_from_directory(app.static_folder, 'index.html') """
 """
 
 answer = find_the_score(tickerOne, begDate, endDate) """
